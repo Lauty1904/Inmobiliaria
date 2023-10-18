@@ -14,9 +14,9 @@ import org.hibernate.annotations.GenericGenerator;
  *
  * @author facuq
  */
-
 @Entity
 public class Properties {
+
     @Id
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2 ")
@@ -97,7 +97,4 @@ public class Properties {
         this.description = description;
     }
 
-    
-    
 }
-
